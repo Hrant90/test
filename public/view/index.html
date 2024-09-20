@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="../css/TaskList.css">
+</head>
+<body>
+<div id="search-block">
+    <input type="text" id="search-input" placeholder="Search tasks">
+    <button id="search-btn">Search</button>
+</div>
+
+<table id="tasks-table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Date</th>
+    </tr>
+    </thead>
+    <tbody id="table-body">
+    </tbody>
+</table>
+
+<div id="pagination">
+</div>
+
+<div id="task-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title">Task 1</h2>
+        <div class="modal-field">
+            <label for="modal-description" class="modal-label">Description:</label>
+            <p id="modal-description"></p>
+        </div>
+        <div class="modal-field">
+            <label for="modal-status" class="modal-label">Status:</label>
+            <p id="modal-status"></p>
+        </div>
+        <div class="modal-field">
+            <label for="modal-date" class="modal-label">Date:</label>
+            <p id="modal-date"></p>
+        </div>
+        <div class="modal-field">
+            <label for="modal-author" class="modal-label">Author:</label>
+            <p id="modal-author"></p>
+        </div>
+    </div>
+</div>
+
+<script src="../js/TaskList.js"></script>
+</body>
+</html>
